@@ -2,8 +2,8 @@ resource "aws_lb" "kiran" {
   name               = "roboshop"
   internal           = var.internet
   load_balancer_type = var.lb_type
-  security_groups    = [aws_security_group.lb_sg.id]
-  subnets            = [for subnet in aws_subnet.public : subnet.id]
+  security_groups    = var.security_groups
+  subnets            = var.subnet_ids
   idle_timeout       = var.timeout
 
   enable_deletion_protection = true
