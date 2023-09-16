@@ -30,7 +30,7 @@ variable "subnet_ids" {
   type = list
 }
 
-variable "security_groups" {
+variable "security_group" {
   type = list
 }
 
