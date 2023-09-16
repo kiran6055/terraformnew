@@ -1,4 +1,4 @@
-resource "aws_lb" "test" {
+resource "aws_lb" "kiran" {
   name               = "roboshop"
   internal           = var.internet
   load_balancer_type = var.lb_type
