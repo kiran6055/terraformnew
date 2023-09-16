@@ -10,6 +10,6 @@ resource "aws_lb" "test" {
 
 
 
-  tags = tags = merge(var.tags, {
+  tags = merge(var.tags, {
       Name = "roboshop-alb"
     })
