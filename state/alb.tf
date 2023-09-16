@@ -6,7 +6,7 @@ resource "aws_lb" "kiran" {
   subnets            = var.subnet_ids
   idle_timeout       = var.timeout
 
-  enable_deletion_protection = true
+  enable_deletion_protection = false
 
 
 
