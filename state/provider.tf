@@ -6,7 +6,7 @@ terraform {
     }
   }
 
-   backend "s3" {
+  backend "s3" {
     bucket = "terraform6055"
     key    = "terraformkey"
     region = "ap-south-1"
