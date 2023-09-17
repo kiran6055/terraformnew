@@ -20,6 +20,10 @@ data "aws_ami" "example" {
 
 data "aws_region" "current" {}
 
-output "current_region" {
-  value = data.aws_region.current
+
+
+
+data "aws_vpc" "existing_vpc" {
+  id = "vpc-05b3b6d8786e903bb"
 }
+
