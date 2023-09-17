@@ -16,3 +16,4 @@ data "aws_ami" "example" {
     name   = "virtualization-type"
     values = ["hvm"]
   }
+}
