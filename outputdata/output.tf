@@ -1,3 +1,3 @@
-output "public_ip" {
-  value = aws_instance.kiran.public_ip
+output "publicdns" {
+  value = aws_instance.kiran.public_dns
 }
