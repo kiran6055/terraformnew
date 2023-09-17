@@ -1,9 +1,9 @@
 data "aws_ami" "example" {
   most_recent      = true
-  owners           = ["self"]
+  owners           = ["137112412989"]
 
   filter {
-    name   = "137112412989"
+    name   = "name"
     values = ["amzn2-ami-kernel-*-x86_64-gp2"]
   }
 
