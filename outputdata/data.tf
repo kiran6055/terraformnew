@@ -1,6 +1,6 @@
 data "aws_ami" "example" {
   most_recent      = true
-  owners           = ["137112412989"]
+  owners           = [var.aws_accounts[data.aws_region.current.name]]
 
   filter {
     name   = "name"
@@ -17,3 +17,6 @@ data "aws_ami" "example" {
     values = ["hvm"]
   }
 }
+
+data "aws_region" "current" {}
+
