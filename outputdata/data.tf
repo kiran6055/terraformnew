@@ -4,7 +4,7 @@ data "aws_ami" "example" {
 
   filter {
     name   = "137112412989"
-    values = [" amzn2-ami-kernel-*-x86_64-gp2"]
+    values = ["amzn2-ami-kernel-*-x86_64-gp2"]
   }
 
   filter {
