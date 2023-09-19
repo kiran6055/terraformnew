@@ -17,3 +17,13 @@ variable "servers" {
     "db-server"  = "t3.large"
   }
 }
+
+variable "instancename" {
+  type = "string"
+  default = "web"
+}
+
+variable "instanceenv" {
+  type = "string"
+  default = "prod"
+}
