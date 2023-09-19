@@ -1,4 +1,4 @@
-variable "instances" {
+variable "tags" {
   type = list
-  default = ["web-server","app-server","db-server"]
+  default = ["webserver","app-server","db-server"]
 }
