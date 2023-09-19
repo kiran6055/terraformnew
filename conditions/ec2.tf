@@ -17,7 +17,8 @@ resource "aws_instance" "web" {
 
 
 # here we are writing for each loop which can be executted at only map variables
- resource "aws_instance" "servers" {
+ resource "aws_instance" "ser" {
+    for_each      = var.servers
     ami           = "ami-0ff30663ed13c2290"
     instance_type = each.value
     tags = {
