@@ -29,7 +29,7 @@
 
  resource "aws_instance" "ser" {
     ami           = "ami-0ff30663ed13c2290"
-    instance_type = "t3.micro"
+    instance_type = "23.micro"
     tags = {
       Name = local.instance_name
     }

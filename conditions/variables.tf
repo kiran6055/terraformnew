@@ -18,12 +18,12 @@ variable "servers" {
   }
 }
 
-variable "instancename" {
+variable "instance_name" {
   type = string
   default = "web"
 }
 
-variable "instanceenv" {
+variable "instance_env" {
   type = string
   default = "prod"
 }
