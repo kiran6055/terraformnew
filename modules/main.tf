@@ -27,7 +27,5 @@ resource "aws_security_group" "web" {
     ipv6_cidr_blocks = ["::/0"]
   }
 
-  tags = {
-    Name = "allow_tls"
-  }
+  tags = var.tags
 }
