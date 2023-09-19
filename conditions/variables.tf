@@ -20,10 +20,10 @@ variable "servers" {
 
 variable "instance_name" {
   type = string
-  default = "web"
+  default = "web-server"
 }
 
-variable "instance_env" {
+variable "environment" {
   type = string
-  default = "prod"
+  default = "DEV"
 }
