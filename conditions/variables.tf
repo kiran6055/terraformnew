@@ -8,7 +8,7 @@ variable "type" {
   default = false
 }
 
-variable "server" {
+variable "servers" {
   type = map 
   default = {
     #this values are called KEY afterbefore =  symbol after = symbol words or number are called VALUE
