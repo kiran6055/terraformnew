@@ -1,3 +1,3 @@
 locals {
-  instance_name = join("-",["var.instance_name", "var.environment"])
+  instance_name = join("-",[var.instance_name, var.instanceenvironment])
 }

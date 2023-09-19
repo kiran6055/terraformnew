@@ -23,7 +23,7 @@ variable "instance_name" {
   default = "web-server"
 }
 
-variable "environment" {
+variable "instance_environment" {
   type = string
   default = "DEV"
 }
