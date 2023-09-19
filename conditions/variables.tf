@@ -5,5 +5,5 @@ variable "tags" {
 
 variable "type" {
   type = bool
-  default = true
+  default = false
 }
