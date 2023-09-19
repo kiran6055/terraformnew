@@ -19,11 +19,11 @@ variable "servers" {
 }
 
 variable "instancename" {
-  type = "string"
+  type = string
   default = "web"
 }
 
 variable "instanceenv" {
-  type = "string"
+  type = string
   default = "prod"
 }
