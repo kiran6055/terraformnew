@@ -14,3 +14,14 @@ resource "aws_instance" "web" {
 #    instance_type = var.type ? "t3.micro" : "t3.medium"
 
 # }
+
+
+# here we are writing for each loop which can be executted at only map variables
+ resource "aws_instance" "serves" {
+    ami           = "ami-0ff30663ed13c2290"
+    instance_type = each.value
+    tags = {
+      Name = each.key
+    }
+
+}
