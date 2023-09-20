@@ -5,3 +5,4 @@ variable "tags" {
     env = "prod"
   }
 }
+
